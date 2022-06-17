@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>The Sparks Foundation</h1>
+            </div>
+            <div class="menu">
+                <a type="button" class="btn btn-outline-light" href="https://www.thesparksfoundationsingapore.org/" target="_blank" >Home</a>
+                <a class="btn btn-outline-light" href="https://www.thesparksfoundationsingapore.org/programs/student-scholarship-program/"
+                    target="_blank">Programs</a>
+                <a class="btn btn-outline-light" href="https://www.thesparksfoundationsingapore.org/about/vision-mission-and-values/"
+                    target="_blank">About</a>
+                <a class="btn btn-outline-light" href="https://www.thesparksfoundationsingapore.org/contact-us/" target="_blank">Contact</a>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+                <h1>HELPING HANDS</h1>
+                <p>Let us join hands in an attempt to end World hunger.</p>
+                <h4 id="blink">DONATE TO END HUNGER!!</h4>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JgifxI8mPaZdsD" async> </script> </form>
+            </section>
+        </main>
+    </header>
+
+    <!-- this one is for the button -->
+    <script type="text/javascript">
+        var blink = document.getElementById("blink");
+        setInterval(function () {
+            blink.style.opacity = blink.style.opacity == 0 ? 1 : 0;
+        }, 500);
+    </script>
+</body>
+
+</html>
